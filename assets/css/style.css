@@ -1,0 +1,33 @@
+@import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffffff;
+    width: 100%
+}
+
+header {
+    background-image: url(/assets/images/Header-Background.png);
+    background-size: cover;
+    height: 505px;
+    color: #FFFFFF
+        /* margin: 0; */
+
+        /* top: 94px;
+left: 261px;
+gap: 24px; */
+
+}
+
+h1 {
+    margin: 0;
+}
+
+footer {
+    background-color: #23272A;
+}
