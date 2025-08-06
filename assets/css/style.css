@@ -11,11 +11,6 @@ body {
     background-color: #ffffff;
     font-family: "Open Sans", sans-serif;
     width: 100%;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header "
-        "main"
-        "footer"; */
 }
 
 /* Cabeçalho */
@@ -166,6 +161,7 @@ img {
     margin: 0;
 }
 
+/* Rodapé */
 footer {
     background-color: #23272A;
     height: 134px;
@@ -177,4 +173,101 @@ footer {
 footer img {
     width: 230px;
     height: 63px;
+}
+
+/* ------ Responsividade ------*/
+@media (min-width: 400px) and (max-width: 1024px) {
+
+    header,
+    nav {
+        background-image: url(/assets/images/Header-Background-mobile.png);
+        width: auto;
+        height: 506px;
+        background-size: cover;
+    }
+
+    h1 {
+        font-size: 2rem;
+        width: 278px;
+        text-align: left;
+    }
+
+    .header-text {
+        margin: 24px;
+        align-items: flex-start;
+    }
+
+    .header-text p {
+        text-align: left;
+    }
+
+    .header-buttons {
+
+        flex-direction: column;
+        height: 122px;
+        align-self: center;
+    }
+
+    .button-1,
+    .button-2 {
+        width: 381px;
+        margin: 5px 0;
+        height: 54px;
+    }
+
+    .section-1,
+    .section-2,
+    .section-3,
+    .section-4 {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 35px 24px;
+        margin: 0;
+    }
+
+    .section-1 {
+        margin-top: 40px;
+    }
+
+    img {
+        width: 379px;
+        height: 252px;
+    }
+
+    .section-1-text,
+    .section-2-text,
+    .section-3-text,
+    .section-4-text {
+        height: auto;
+    }
+
+    .section-1-text h2,
+    .section-2-text h2,
+    .section-3-text h2,
+    .section-4-text h2 {
+        font-size: 1.4rem;
+        font-weight: 800;
+    }
+
+    .section-2 {
+        flex-direction: column-reverse;
+    }
+
+    .section-4-text,
+    .section-4-text h2 {
+        width: auto;
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    footer {
+        width: auto;
+    }
+
+    footer img {
+        min-width: 162px;
+        min-height: 45px;
+    }
+
 }
