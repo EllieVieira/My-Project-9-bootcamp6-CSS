@@ -1,4 +1,5 @@
 @import url('https://necolas.github.io/normalize.css/8.0.1/normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     margin: 0;
@@ -8,26 +9,172 @@
 
 body {
     background-color: #ffffff;
-    width: 100%
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header "
+        "main"
+        "footer"; */
 }
 
+/* Cabeçalho */
 header {
     background-image: url(/assets/images/Header-Background.png);
     background-size: cover;
     height: 505px;
-    color: #FFFFFF
-        /* margin: 0; */
+    color: #FFFFFF;
+}
 
-        /* top: 94px;
-left: 261px;
-gap: 24px; */
+nav {
+    width: 757px;
+    height: 270px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    top: 64px;
+    gap: 24px;
+}
 
+.header-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
 }
 
 h1 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-size: 3.5rem;
+    line-height: 100%;
+    display: flex;
+    text-align: center;
+    width: 313px;
+}
+
+.header-text p {
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.header-buttons {
+    height: 44px;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.button-1,
+.button-2 {
+    width: 205px;
+    height: 44px;
+    border-radius: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-2 {
+    width: 281px;
+    background-color: #23272A;
+    color: white;
+}
+
+/* Fim do Cabeçalho */
+
+/* Principal */
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin: 56px 0;
+    height: 448px;
+}
+
+img {
+    width: 607px;
+    height: 394px;
+}
+
+.section-1-text,
+.section-2-text,
+.section-3-text,
+.section-4-text {
+    width: 348px;
+    height: 374px;
+    color: #23272A;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+.section-1-text h2,
+.section-2-text h2,
+.section-3-text h2,
+.section-4-text h2 {
+    width: 329px;
+    margin-bottom: 15px;
+}
+
+.section-1-text p,
+.section-2-text p,
+.section-3-text p,
+.section-4-text p {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.section-2,
+.section-4 {
+    background-color: #F6F6F6;
+}
+
+.section-4 {
+    height: 744px;
+    margin: 0;
+    flex-direction: column;
+}
+
+.section-4 img {
+    width: auto;
+}
+
+.section-4-text,
+.section-4-text h2 {
+    width: 802px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+.section-4-text h2 {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    width: 608px;
+}
+
+.section-4-text {
     margin: 0;
 }
 
 footer {
     background-color: #23272A;
+    height: 134px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 230px;
+    height: 63px;
 }
