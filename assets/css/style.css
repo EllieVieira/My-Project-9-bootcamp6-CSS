@@ -15,7 +15,7 @@ body {
 
 /* Cabeçalho */
 header {
-    background-image: url(../images/header-background.png);
+    background-image: url(../images/Header-Background.png);
     background-size: cover;
     height: 505px;
     color: #FFFFFF;
@@ -181,7 +181,7 @@ footer img {
 
     header,
     nav {
-        background-image: url(../images/header-background-mobile.png);
+        background-image: url(../images/Header-Background-mobile.png);
         width: auto;
         height: 506px;
         background-size: cover;
